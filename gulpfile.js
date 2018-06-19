@@ -6,18 +6,24 @@ var url = require('url');
 var sass = require('gulp-sass');
 var mincss = require('gulp-clean-css')
 var minjs = require('gulp-uglify');
-
+var data = require('./mock/data.json');
+console.log(data);
 gulp.task('server', function() {
     gulp.src('src')
         .pipe(server({
             port: 6060,
+            open: true,
             middleware: function(req, res, next) {
                 if (req.url === '/favicon.ico') {
                     return
                 }
                 var pathname = url.parse(req.url).pathname;
                 pathname = pathname === '/' ? 'index.html' : pathname;
-                res.end(fs.readFileSync(path.join(__dirname, 'src', pathname)))
+                if (/\/api\//.test(pathname)) {
+                    res.end(JSON.stringify(data));
+                } else {
+                    res.end(fs.readFileSync(path.join(__dirname, 'src', pathname)))
+                }
             }
         }))
 })

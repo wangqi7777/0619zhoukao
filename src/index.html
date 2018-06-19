@@ -23,42 +23,14 @@
                     必买大牌
                 </div>
                 <ul class="list">
-                    <li>
-                        <img src="img/1.jpg" alt="">
-                        <span>满300减70</span>
-                    </li>
-                    <li>
-                        <img src="img/1.jpg" alt="">
-                        <span>满300减70</span>
-                    </li>
-                    <li>
-                        <img src="img/1.jpg" alt="">
-                        <span>满300减70</span>
-                    </li>
-                    <li>
-                        <img src="img/1.jpg" alt="">
-                        <span>满300减70</span>
-                    </li>
-                    <li>
-                        <img src="img/1.jpg" alt="">
-                        <span>满300减70</span>
-                    </li>
-                    <li>
-                        <img src="img/1.jpg" alt="">
-                        <span>满300减70</span>
-                    </li>
-                    <li>
-                        <img src="img/1.jpg" alt="">
-                        <span>满300减70</span>
-                    </li>
-                    <li>
-                        <img src="img/1.jpg" alt="">
-                        <span>满300减70</span>
-                    </li>
-                    <li>
-                        <img src="img/1.jpg" alt="">
-                        <span>满300减70</span>
-                    </li>
+                    <script type="text/x-handlebars-complate" class="text">
+                        {{#each data}}
+                        <li>
+                            <img src="{{img}}" alt="">
+                            <span>{{title}}</span>
+                        </li>
+                        {{/each}}
+                    </script>
                 </ul>
             </div>
         </div>
