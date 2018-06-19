@@ -22,7 +22,6 @@
             line-height: pxTorem(40px);
         }
         .list {
-            margin-top: pxTorem(10px);
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -51,4 +50,26 @@
 .footer {
     height: pxTorem(50px);
     background: #fff;
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        li {
+            width: 20%;
+            height: pxTorem(50px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            b {
+                width: pxTorem(30px);
+                height: pxTorem(30px);
+                background: #b20fed;
+                border-radius: 50%;
+                text-align: center;
+                line-height: pxTorem(30px);
+                color: #fff;
+            }
+        }
+    }
 }

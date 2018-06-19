@@ -1,0 +1,1 @@
+define(["jquery","handlebars"],function(n,t){n.ajax({url:"/api/index",dataType:"json",success:function(e){var a=t.compile(n(".text").html());n(".list").html(a(e))}})});

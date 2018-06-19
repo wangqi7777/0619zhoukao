@@ -4,7 +4,7 @@ require.config({
         jquery: 'lib/jquery-2.1.1.min',
         handlebars: 'lib/handlebars-v4.0.11',
         flexible: 'lib/flexible',
-        index: 'index'
+        index: '../dist/index'
     }
 })
 
