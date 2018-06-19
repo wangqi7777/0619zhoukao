@@ -1,0 +1,54 @@
+@import 'common.scss';
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #7e0505;
+}
+
+.section {
+    flex: 1;
+    overflow-y: scroll;
+    .cont1 {
+        width: 100%;
+        height: auto;
+        .top {
+            height: pxTorem(40px);
+            color: #fff;
+            font-size: pxTorem(18px);
+            font-weight: 800;
+            text-align: center;
+            line-height: pxTorem(40px);
+        }
+        .list {
+            margin-top: pxTorem(10px);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            li {
+                width: 30%;
+                margin: pxTorem(5px);
+                background: #fff;
+                padding: pxTorem(10px) pxTorem(15px);
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                img {
+                    width: 100%;
+                }
+                span {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: pxTorem(5px);
+                    color: #fe6c78;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    height: pxTorem(50px);
+    background: #fff;
+}
